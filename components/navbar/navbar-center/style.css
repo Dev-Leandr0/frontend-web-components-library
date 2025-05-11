@@ -14,10 +14,63 @@ header {
   /* color del fondo */
   padding: 1.5rem;
   /* padding superior e inferior */
-  text-align: center;
-  /* centrado del texto */
   font-size: 1.125rem;
   /* tamaño de la fuente */
+}
+
+nav {
+  display: flex;
+  /* muestra los elementos en línea */
+  align-items: center;
+  /* alinea los elementos verticalmente */
+  justify-content: center;
+  /* alinea los elementos horizontalmente */
+  position: relative;
+  /* posición relativa */
+}
+
+.nav-logo {
+  position: absolute;
+  /* posición absoluta */
+  left: 1rem;
+  /* distancia desde la izquierda */
+  display: flex;
+  /* muestra los elementos en línea */
+  align-items: center;
+  /* alinea los elementos verticalmente */
+  gap: 0.5rem;
+  /* espacio entre los elementos */
+}
+
+.nav-logo a {
+  display: flex;
+  /* muestra los elementos en línea */
+  align-items: center;
+  /* alinea los elementos verticalmente */
+  gap: 0.5rem;
+  /* espacio entre los elementos */
+  text-decoration: none;
+  /* quita el subrayado */
+  color: white;
+  /* color del texto */
+}
+
+.nav-logo img {
+  height: 75px;
+  /* altura de la imagen */
+  transition: transform 0.3s ease;
+  /* transición suave */
+}
+
+.nav-logo img:hover {
+  transform: scale(1.1);
+  /* aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.nav-logo h2 {
+  font-size: 1.2rem;
+  /* tamaño de la fuente */
+  color: white;
 }
 
 nav ul {
