@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  /* quita el margen */
+  padding: 0;
+  /* quita el padding */
+  box-sizing: border-box;
+  /* incluye el padding y el borde en el tamaño total del elemento */
+}
+
+header {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  /* fuente de la cabecera */
+  background-color: #0F6466;
+  /* color del fondo */
+  padding: 1.5rem;
+  /* padding superior e inferior */
+  font-size: 1.125rem;
+  /* tamaño de la fuente */
+}
+
+nav {
+  display: flex;
+  /* muestra los elementos en línea */
+  align-items: center;
+  /* alinea los elementos verticalmente */
+  justify-content: center;
+  /* alinea los elementos horizontalmente */
+  position: relative;
+  /* posición relativa */
+}
+
+.nav-logo {
+  position: absolute;
+  /* posición absoluta */
+  right: 1rem;
+  /* distancia desde la derecha */
+  display: flex;
+  /* muestra los elementos en línea */
+  align-items: center;
+  /* alinea los elementos verticalmente */
+  gap: 0.5rem;
+  /* espacio entre los elementos */
+  transition: transform 0.3s ease;
+  /* transición suave */
+}
+
+.nav-logo a {
+  display: flex;
+  /* muestra los elementos en línea */
+  align-items: center;
+  /* alinea los elementos verticalmente */
+  gap: 0.5rem;
+  /* espacio entre los elementos */
+  text-decoration: none;
+  /* quita el subrayado */
+  color: white;
+  /* color del texto */
+}
+
+.nav-logo img {
+  height: 75px;
+  /* altura de la imagen */
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
+  /* aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.nav-logo h2 {
+  font-size: 1.2rem;
+  /* tamaño de la fuente */
+  color: white;
+  /* color del texto */
+}
+
+nav ul {
+  list-style: none;
+  /* quita los puntos de la lista */
+  margin: 0;
+  /* quita el margen */
+  padding: 0;
+  /* quita el padding */
+  justify-content: flex-start;
+  /* alinea los elementos a la izquierda */
+  display: flex;
+  /* muestra los elementos en línea */
+  width: 100%;
+  /* ancho del contenedor */
+  gap: 0.1rem;
+}
+
+nav ul li {
+  display: inline-block;
+  /* muestra los elementos en línea */
+  margin: 0 1rem;
+  /* margen entre los elementos */
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* quita el subrayado */
+  color: white;
+  /* color del texto */
+  padding: 0.70rem;
+  /* padding superior e inferior */
+  border-radius: 1.2rem;
+  /* bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* transición suave */
+}
+
+nav ul li a:hover {
+  background-color: #D2E8E3;
+  /* color de fondo al pasar el mouse */
+  color: black;
+  /* color del texto al pasar el mouse */
+}
